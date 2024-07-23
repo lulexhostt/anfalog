@@ -1,0 +1,148 @@
+.admin-panel {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .adminText{
+    font-weight:900;
+    font-size: 30px;
+    margin: 30px;
+    margin-top: 30px;
+    text-align: center;
+    
+    
+  }
+  
+  .logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 40px;
+  }
+
+  .editButtonn {
+    background-color: #1c7d4b;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: smaller;
+      
+  }
+
+  .deleteButtonn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: smaller;
+      
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .dashboard-item {
+    width: 45%;
+    height: 150px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+  }
+  
+  .dashboard-item:hover {
+    background-color: #0d0c0d;
+  }
+  
+  .modal {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    font-weight:400;
+  }
+
+  .labell {
+    padding-right: 35px;
+    text-transform: capitalize;
+ 
+  }
+
+  .inputt {
+    border-radius: 7px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    
+  }
+
+  .button2 {
+    padding: 15px;
+    background-color: black;
+    font-size:large;
+    border-radius: 10px;
+    color: #ddd;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .form-group div {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .vessel-list {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .vessel-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vessel-item button {
+    margin-right: 10px;
+  }
+
+  .createVessel {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    
+  }
+  
