@@ -1,17 +1,15 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
-const supabaseUrl = 'https://ngjbcfvuqorstbwjqhvl.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5namJjZnZ1cW9yc3Rid2pxaHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjExMzE0OTksImV4cCI6MjAzNjcwNzQ5OX0.j-Y6039mdG50HnnIxCe2kLTMASWyknoT2IYgsIypcZM'; // Replace with your Supabase key
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { supabase } from '../../lib/supabase'; // Import the singleton Supabase client
 
 const VesselMap = ({ vesselId }) => {
-    const [map, setMap] = useState(null);
-    const mapContainer = useRef(null); // Ref to hold the map container element
+    const mapContainer = useRef(null);
+    const mapInstanceRef = useRef(null); // To store the map instance
 
     useEffect(() => {
+        if (!vesselId || !mapContainer.current) return;
+
         const fetchVesselData = async () => {
             try {
                 const { data, error } = await supabase
@@ -26,51 +24,52 @@ const VesselMap = ({ vesselId }) => {
 
                 const { latitude, longitude } = data;
 
-                // Check if map already exists
-                if (map) {
-                    map.setView([latitude, longitude], 10); // Just update the view if map exists
+                if (mapInstanceRef.current) {
+                    // Update the map view if already initialized
+                    console.log('Updating map view to:', latitude, longitude);
+                    mapInstanceRef.current.setView([latitude, longitude], 10);
                 } else {
-                    // Initialize the map using Leaflet
-                    const leafletMap = L.map(mapContainer.current).setView([latitude, longitude], 10);
-
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: 'Map data © <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    }).addTo(leafletMap);
+                    // Initialize the map if it has not been initialized
+                    console.log('Initializing map at:', latitude, longitude);
+                    const leafletMap = L.map(mapContainer.current, {
+                        center: [latitude, longitude],
+                        zoom: 10,
+                        layers: [
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                attribution: 'Map data © <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            })
+                        ]
+                    });
 
                     L.marker([latitude, longitude]).addTo(leafletMap);
 
-                    setMap(leafletMap); // Set the map instance to state
+                    mapInstanceRef.current = leafletMap; // Store the map instance in ref
                 }
             } catch (error) {
                 console.error('Error fetching vessel data:', error);
             }
         };
 
-        if (vesselId) {
-            fetchVesselData();
-        }
+        fetchVesselData();
 
-        // Cleanup function to destroy the map when component unmounts or when fetching new data
         return () => {
-            if (map) {
-                map.remove(); // Ensure map is properly destroyed
-                setMap(null); // Reset map state
+            if (mapInstanceRef.current) {
+                console.log('Removing map instance');
+                mapInstanceRef.current.remove(); // Ensure map is properly destroyed
+                mapInstanceRef.current = null; // Reset map instance ref
             }
         };
     }, [vesselId]);
 
     return (
- 
-        <>
         <div 
             ref={mapContainer} 
             id="map-container" 
             className='rounded-b-2xl lg:rounded-r-2xl w-full' 
             style={{ width: '100%', height: '400px' }}
         >
-            {!map && <p>Loading map...</p>}
+            {!mapInstanceRef.current && <p>Loading map...</p>}
         </div>
-    </>
     );
 };
 

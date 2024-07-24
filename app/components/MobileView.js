@@ -1,4 +1,4 @@
-// AisResult.js
+// MobileView.js
 
 "use client"
 
@@ -6,11 +6,11 @@ import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import ProgressBar from '../components/ProgressBar'; // Import the ProgressBar component
-import VesselMap from '../components/VesselMap';
+// import VesselMap from '../components/VesselMap';
 import CountryFlag from '../components/CountryFlag';
 import Carousel from '../components/Carousel';
 
-const AisResult = () => {
+const MobileView = () => {
     const searchParams = useSearchParams();
     const data = searchParams.get('data');
 
@@ -143,10 +143,8 @@ const AisResult = () => {
                                             </td>
                                         </tr>
 
-                                        <div className="rounded-t-2xl">
-                                            {/* Use CountryFlag component */}
-
-                                        </div>
+                                      
+                                  
 
 
                                         <tr>
@@ -273,7 +271,7 @@ const AisResult = () => {
 
                                 <div className='  h-[400px]'>
                                     {/* Replace static image with VesselMap component */}
-                                    <VesselMap vesselId={vesselData.id} />
+                                    {/* <VesselMap vesselId={vesselData.id} /> */}
                                     
                                 </div>
 
@@ -349,4 +347,4 @@ const AisResult = () => {
     );
 };
 
-export default AisResult;
+export default MobileView;
