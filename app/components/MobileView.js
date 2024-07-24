@@ -6,9 +6,13 @@ import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import ProgressBar from '../components/ProgressBar'; // Import the ProgressBar component
-// import VesselMap from '../components/VesselMap';
+import dynamic from 'next/dynamic';
 import CountryFlag from '../components/CountryFlag';
 import Carousel from '../components/Carousel';
+
+
+// Dynamic import of VesselMap component with no SSR
+const VesselMap = dynamic(() => import('../components/VesselMap'), { ssr: false });
 
 const MobileView = () => {
     const searchParams = useSearchParams();
@@ -271,7 +275,7 @@ const MobileView = () => {
 
                                 <div className='  h-[400px]'>
                                     {/* Replace static image with VesselMap component */}
-                                    {/* <VesselMap vesselId={vesselData.id} /> */}
+                                    <VesselMap vesselId={vesselData.id} />
                                     
                                 </div>
 
