@@ -39,11 +39,15 @@ function LayoutContent({ children }) {
             </Link>
           </div>
           <div className="hidden lg:flex space-x-6">
-            {/* Navigation Links */}
-            <Link href="https://simdia.framer.website" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Home</Link>
-            {/* ... other links */}
-            <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
-          </div>
+              <Link href="https://simdia.framer.website" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Home</Link>
+              <Link href="https://simdia.framer.website/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Who we are</Link>
+              <Link href="https://simdia.framer.website/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Operations</Link>
+              <Link href="https://simdia.framer.website/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Terminals</Link>
+              <Link href="https://simdia.framer.website/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Sustainability</Link>
+              <Link href="https://simdia.framer.website/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Safety</Link>
+              <Link href="https://simdia.framer.website/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Contact</Link>
+              <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
+            </div>
           <div className="lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-white">
               <div className="space-y-2">
@@ -63,10 +67,15 @@ function LayoutContent({ children }) {
               ✕
             </button>
             <div className="flex flex-col items-start p-4 space-y-4 mt-8 gap-y-1">
-              <Link href="https://simdia.framer.website" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Home</Link>
-              {/* ... other links */}
-              <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
-            </div>
+                <Link href="https://simdia.framer.website" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Home</Link>
+                <Link href="https://simdia.framer.website/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Who we are</Link>
+                <Link href="https://simdia.framer.website/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Operations</Link>
+                <Link href="https://simdia.framer.website/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Terminals</Link>
+                <Link href="https://simdia.framer.website/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Sustainability</Link>
+                <Link href="https://simdia.framer.website/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Safety</Link>
+                <Link href="https://simdia.framer.website/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Contact</Link>
+                <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
+              </div>
           </div>
         )}
       </nav>
