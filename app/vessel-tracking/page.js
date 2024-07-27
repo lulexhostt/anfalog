@@ -72,21 +72,21 @@ const VesselTracking = () => {
 
   return (
     <div className="relative container mx-auto p-8 md:pt-20 min-h-screen bg-center">
-      <h1 className="text-6xl font-semibold text-center text-[#241d66]">Track a Vessel</h1>
+      <h1 className=" text-4xl md:text-6xl font-semibold text-center text-[#241d66]">Track a Vessel</h1>
       <h1 className="text-lg text-center text-slate-600">Monitor and locate a vessel on Oliehandelvisbv</h1>
       <div className="mt-6 flex flex-col lg:px-44">
-        <div className='border-1 rounded-lg shadow-custom-lg p-[60px] md:rounded-full md:p-[25px] mt-4 bg-white bg-opacity-75'>
+        <div className='border-1 rounded-lg shadow-custom-lg px-[30px] py-[60px]   md:rounded-full md:p-[25px] mt-4 bg-white bg-opacity-75'>
           <div className='flex flex-col items-center md:flex-row md:gap-2'>
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={searchType === 'imo' ? 'Type or Enter IMO Number' : 'Type or Enter Vessel Name'}
-              className="border-[1px] p-6 w-full rounded-full border-[#3423cb] outline-none"
+              className="border-[1px] px-4 py-5 md:p-6 w-full rounded-full border-[#3423cb] outline-none"
             />
             <button
               onClick={fetchVesselData}
-              className="bg-[#3423cb] text-lg font-semibold text-white px-6 py-3 mt-2 w-4/6 md:mt-0 md:w-3/6 md:py-6 border rounded-full"
+              className="bg-[#3423cb] text-sm md:text-lg font-semibold text-white px-2 md:px-6 py-4 mt-2 w-4/6 md:mt-0 md:w-3/6 md:py-6 border rounded-full"
             >
               Track Vessel
             </button>

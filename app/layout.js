@@ -8,6 +8,7 @@ import Link from 'next/link';
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -45,7 +46,7 @@ function LayoutContent({ children }) {
               <Link href="https://oliehandelvisbv.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Terminals</Link>
               <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Sustainability</Link>
               <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Safety</Link>
-              <Link href="https://oliehandelvisbv.nl/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Contact</Link>
+              <Link href="/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Contact</Link>
               <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
             </div>
           <div className="lg:hidden">
@@ -73,7 +74,7 @@ function LayoutContent({ children }) {
                 <Link href="https://oliehandelvisbv.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Terminals</Link>
                 <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Sustainability</Link>
                 <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Safety</Link>
-                <Link href="https://oliehandelvisbv.nl/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Contact</Link>
+                <Link href="/contact-us" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Contact</Link>
                 <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
               </div>
           </div>
