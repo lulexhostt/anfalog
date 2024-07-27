@@ -76,7 +76,7 @@ const ContactUs = () => {
                         <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Sustainability</Link>
                         <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Safety</Link>
                         <Link href="/contact-us" className="text-[#FF6F00] font-bold text-sm hover:text-[#ff6f00f1]">Contact</Link>
-                        <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
+                        <Link href="/" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
                     </div>
                     <div className="lg:hidden">
                         <button onClick={() => setIsOpen(!isOpen)} className="text-white">
@@ -103,7 +103,7 @@ const ContactUs = () => {
                             <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Sustainability</Link>
                             <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Safety</Link>
                             <Link href="/contact-us" className="text-[#FF6F00] font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Contact</Link>
-                            <Link href="/vessel-tracking" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
+                            <Link href="/" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
                         </div>
                     </div>
                 )}
