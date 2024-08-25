@@ -61,20 +61,20 @@ const ContactUs = () => {
 
     return (
         <div className="relative w-full h-screen bg-center">
-            <nav className="fixed top-0 left-0 w-11/12 z-20 bg-black px-8 lg:px-14 py-2 ml-5 mr-5 lg:mr-[55px] lg:ml-[80px] mt-4 rounded-full">
+            <nav className="fixed top-0 left-0 w-11/12 z-20 bg-[#0F248A] px-8 lg:px-14 py-2 ml-5 mr-5 lg:mr-[55px] lg:ml-[80px] mt-4 rounded-full">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="text-white font-bold text-lg">
-                        <Link href="https://oliehandelvisbv.nl">
+                        <Link href="https://anfashlogistics.nl">
                             <img src="/logo.png" alt="Logo" className="h-12 rounded-full" />
                         </Link>
                     </div>
                     <div className="hidden lg:flex space-x-6">
-                        <Link href="https://oliehandelvisbv.nl" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Home</Link>
-                        <Link href="https://oliehandelvisbv.nl/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Who we are</Link>
-                        <Link href="https://oliehandelvisbv.nl/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Operations</Link>
-                        <Link href="https://oliehandelvisbv.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Terminals</Link>
-                        <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Sustainability</Link>
-                        <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Safety</Link>
+                        <Link href="https://anfashlogistics.nl" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Home</Link>
+                        <Link href="https://anfashlogistics.nl/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Who we are</Link>
+                        <Link href="https://anfashlogistics.nl/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Operations</Link>
+                        <Link href="https://anfashlogistics.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Terminals</Link>
+                        <Link href="https://anfashlogistics.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Sustainability</Link>
+                        <Link href="https://anfashlogistics.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00]">Safety</Link>
                         <Link href="/contact-us" className="text-[#FF6F00] font-bold text-sm hover:text-[#ff6f00f1]">Contact</Link>
                         <Link href="/" className="text-[#FF6F00] text-sm font-bold">Vessel Tracking</Link>
                     </div>
@@ -89,19 +89,19 @@ const ContactUs = () => {
                 </div>
                 {isOpen && (
                     <div
-                        className={`lg:hidden absolute top-0 left-0 right-0 bg-black bg-opacity-90 z-50 p-4  rounded-3xl   transition-all duration-500 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
+                        className={`lg:hidden absolute top-0 left-0 right-0 bg-[#0F248A] bg-opacity-90 z-50 p-4  rounded-3xl   transition-all duration-500 ease-in-out transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
                             }`}
                     >
                         <button onClick={() => setIsOpen(false)} className="text-slate-400 text-xl absolute top-4 right-4 hover:text-[#FF6F00]">
                             ✕
                         </button>
                         <div className="flex flex-col items-start p-4 space-y-4 mt-8 gap-y-1">
-                            <Link href="https://oliehandelvisbv.nl" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Home</Link>
-                            <Link href="https://oliehandelvisbv.nl/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Who we are</Link>
-                            <Link href="https://oliehandelvisbv.nl/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Operations</Link>
-                            <Link href="https://oliehandelvisbv.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Terminals</Link>
-                            <Link href="https://oliehandelvisbv.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Sustainability</Link>
-                            <Link href="https://oliehandelvisbv.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Safety</Link>
+                            <Link href="https://anfashlogistics.nl" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Home</Link>
+                            <Link href="https://anfashlogistics.nl/who-we-are" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Who we are</Link>
+                            <Link href="https://anfashlogistics.nl/operations" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Operations</Link>
+                            <Link href="https://anfashlogistics.nl/terminals" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Terminals</Link>
+                            <Link href="https://anfashlogistics.nl/sustainability" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Sustainability</Link>
+                            <Link href="https://anfashlogistics.nl/safety" className="text-slate-200 font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Safety</Link>
                             <Link href="/contact-us" className="text-[#FF6F00] font-normal text-sm hover:text-[#FF6F00] py-2" onClick={handleLinkClick}>Contact</Link>
                             <Link href="/" className="text-[#FF6F00] text-sm font-bold py-2" onClick={handleLinkClick}>Vessel Tracking</Link>
                         </div>
@@ -137,22 +137,20 @@ const ContactUs = () => {
                         <p>
                             Head Office:
                             <br />
-                            Data Oliehandel Vis BV
+                            Data Anfash Logistics BV
                             <br />
-                            Chamber of Commerce number: 30207210
+                            KVK Number: 93428251
                             <br />
-                            Establishment no: 000015798127
+                            De Sperwer 45
                             <br />
-                            Gnephoek 4, 2401 LP
-                            <br />
-                            Alphen aan den Rijn,
+                            8239AH Lelystad,
                             <br />
                             Netherlands
                         </p>
                         <p>
-                            Phone: +31 970 0503 0184
+                            Phone: +1 713 769 4036
                             <br />
-                            Email: storage@oliehandelvisbv.nl
+                            Email: storage@anfashlogistics.nl
                         </p>
                     </div>
 
@@ -220,7 +218,7 @@ const ContactUs = () => {
                             <iframe
                                 style={{ height: '100%', width: '100%', border: '0' }}
                                 frameBorder="0"
-                                src="https://www.google.com/maps/embed/v1/place?q=Gnephoek+4,+2401+LP+Alphen+aan+den+Rijn,+Netherlands&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                src="https://www.google.com/maps/embed/v1/place?q=De+Sperwer,+De+Sperwer,+Lelystad,+Netherlands&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                                 allowFullScreen
                                 aria-hidden="false"
                                 tabIndex="0"
@@ -240,7 +238,7 @@ const ContactUs = () => {
                         `}</style>
                     </div>
                     <div className="text-white font-bold text-lg mt-20 ">
-                        <Link href="https://oliehandelvisbv.nl">
+                        <Link href="https://anfashlogistics.nl">
                             <img src="/contactImage.png" alt="Logo" className="h-full w-full rounded-b-3xl" />
                         </Link>
                     </div>

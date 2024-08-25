@@ -5,14 +5,14 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'support@oliehandelvisbv.nl',
+        user: 'support@anfashlogistics.nl',
         pass: 'Dry7$stz',
     },
 });
 
 const mailOptions = {
-    from: 'support@oliehandelvisbv.nl',
-    to: 'storage@oliehandelvisbv.nl',
+    from: 'support@anfashlogistics.nl',
+    to: 'storage@anfashlogistics.nl',
     subject: 'Test Email',
     text: 'This is a test email from Nodemailer.',
     html: '<p>This is a test email from Nodemailer.</p>',

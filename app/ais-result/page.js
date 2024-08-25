@@ -150,7 +150,7 @@ const AisResult = () => {
                                                     Type
                                                 </th>
                                                 <th scope="col" className="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                    <img src="https://ngjbcfvuqorstbwjqhvl.supabase.co/storage/v1/object/public/oliehandelvisbv/shipvessel.png" alt="Vessel" className="w-[38px] h-[43px] object-contain" />
+                                                    <img src="https://pgszodlotmkwedmjhurv.supabase.co/storage/v1/object/public/anfashlogistics/shipvessel.png" alt="Vessel" className="w-[38px] h-[43px] object-contain" />
                                                 </th>
                                             </tr>
                                         </thead>
@@ -309,7 +309,7 @@ const AisResult = () => {
                                 <div className=' flex flex-col gap-4 px-7 py-3'>
                                     <p> The current position of <strong>{vesselData.vessel_name}</strong>  with coordinates 20.67272° / -105.95633° as reported
                                         today by AIS to our vessel tracker app. The vessel's current speed is <strong>{vesselData.speed}</strong> Knots and is
-                                        heading at the port of <strong>{vesselData.arrival_port}</strong> . The estimated time of arrival as calculated by Oliehandelvisbv vessel
+                                        heading at the port of <strong>{vesselData.arrival_port}</strong> . The estimated time of arrival as calculated by Anfashlogistics vessel
                                         tracking app is <strong>{vesselData.estimated_time_of_arrival}</strong> (UTC+2) today.
                                     </p>
 

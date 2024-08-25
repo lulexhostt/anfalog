@@ -73,7 +73,7 @@ const VesselTracking = () => {
   return (
     <div className="relative container mx-auto p-8 md:pt-20 min-h-screen bg-center">
       <h1 className=" text-4xl md:text-6xl font-semibold text-center text-[#241d66]">Track a Vessel</h1>
-      <h1 className="text-lg text-center text-slate-600">Monitor and locate a vessel on Oliehandelvisbv</h1>
+      <h1 className="text-lg text-center text-slate-600">Monitor and locate a vessel on Anfashlogistics</h1>
       <div className="mt-6 flex flex-col lg:px-44">
         <div className='border-1 rounded-lg shadow-custom-lg px-[30px] py-[60px]   md:rounded-full md:p-[25px] mt-4 bg-white bg-opacity-75'>
           <div className='flex flex-col items-center md:flex-row md:gap-2'>

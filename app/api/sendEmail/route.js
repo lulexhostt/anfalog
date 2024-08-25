@@ -15,7 +15,7 @@ export async function POST(request) {
 
     const mailOptions = {
         from: process.env.SMTP_USER,
-        to: 'storage@oliehandelvisbv.nl',
+        to: 'storage@anfashlogistics.nl',
         subject: 'Secured Message Received',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
         html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong> ${message}</p>`,

@@ -70,7 +70,7 @@ const AdminPanel = () => {
                 const filePath = `${Date.now()}_${file.name}`; // Generate a unique file path
                 const { data, error } = await supabase
                     .storage
-                    .from('vessel-images')
+                    .from('anfashlogistics')
                     .upload(filePath, file);
     
                 if (error) {
@@ -80,7 +80,7 @@ const AdminPanel = () => {
                 // Fetch the public URL for the uploaded file
                 const { data: publicURLData, error: urlError } = supabase
                     .storage
-                    .from('vessel-images')
+                    .from('anfashlogistics')
                     .getPublicUrl(filePath);
     
                 if (urlError) {
