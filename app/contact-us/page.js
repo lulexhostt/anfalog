@@ -148,7 +148,7 @@ const ContactUs = () => {
                             Netherlands
                         </p>
                         <p>
-                            Phone: +1 713 769 4036
+                            Phone: +31 686315743
                             <br />
                             Email: storage@anfashlogistics.nl
                         </p>
