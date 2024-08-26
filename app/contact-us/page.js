@@ -135,9 +135,9 @@ const ContactUs = () => {
                             you as soon as possible
                         </p>
                         <p>
-                            Head Office:
+                             <b>Head Office - Netherland:</b>
                             <br />
-                            Data Anfash Logistics BV
+                            Anfash Logistics BV
                             <br />
                             KVK Number: 93428251
                             <br />
@@ -148,10 +148,21 @@ const ContactUs = () => {
                             Netherlands
                         </p>
                         <p>
-                            Phone: +31 686315743
+                        Phone: +31 686315743
                             <br />
                             Email: storage@anfashlogistics.nl
                         </p>
+
+                        <p>
+                        <b>Houston Branch:</b>
+                            <br />
+                            Anfash Logistics BV
+                            <br />
+                            Phone: +1 (713) 769 4036
+                           
+                           
+                        </p>
+                        
                     </div>
 
                     <div className='bg-white w-full lg:w-1/2 mt-10  '>
