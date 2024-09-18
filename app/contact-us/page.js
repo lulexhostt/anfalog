@@ -164,7 +164,7 @@ const ContactUs = () => {
                         </p>
 
                         <p>
-                        <b>TTM Office For Buyer (Meeting at Anfash Logistics B.V Tank Farm)</b>
+                        <b>TTM Office For Buyer:</b>
                             <br />
                             Walter Kurka
                             <br />
