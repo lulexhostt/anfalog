@@ -162,6 +162,22 @@ const ContactUs = () => {
                            
                            
                         </p>
+
+                        <p>
+                        <b>TTM Office For Buyer (Meeting at Anfash Logistics B.V Tank Farm)</b>
+                            <br />
+                            Walter Kurka
+                            <br />
+                            PO Box 362
+                            <br />
+                            69335 Vince Road
+                            <br />
+                            Anchor Point, Alaska 99556
+                            <br />
+                            907-299-5074, (desk phone)
+                           
+                           
+                        </p>
                         
                     </div>
 
